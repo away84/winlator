@@ -40,10 +40,10 @@ jobs:
  
     # 可选步骤：上传APK到GitHub Releases（需要配置GITHUB_TOKEN）
     - name: Upload APK to GitHub Releases
-       uses: actions/upload-artifact@v2
-       with:
-         name: app-release.apk
-         path: app/build/outputs/apk/release/app-release.apk
+      uses: actions/upload-artifact@v2
+      with:
+        name: app-release.apk
+        path: app/build/outputs/apk/release/app-release.apk
  
     # 如果要自动发布到Google Play Store，你需要使用Google Play Publisher API和相应的GitHub Action
     # 注意：这需要配置服务帐户密钥和其他敏感信息，通常通过GitHub Secrets管理
