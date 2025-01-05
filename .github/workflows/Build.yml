@@ -17,7 +17,7 @@ on:
  
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
  
     steps:
     - name: Checkout code
@@ -46,8 +46,7 @@ jobs:
     #   run: ./gradlew test
  
     # 可选步骤：上传APK到GitHub Releases（需要配置GITHUB_TOKEN）
-    - name: Upload APK to GitHub Releases
-      uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v4
       with:
         name: app-release.apk
         path: app/build/outputs/apk/release/app-release.apk
