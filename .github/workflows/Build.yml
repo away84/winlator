@@ -31,9 +31,9 @@ jobs:
  
     - name: Set up Android SDK
       uses: android-actions/setup-android@v2
-      with:
-        api-level: 30 # 根据项目需要设置API级别
-        build-tools-version: 30.0.3 # 根据项目需要设置Build Tools版本
+      # with:
+        # api-level: 30 # 根据项目需要设置API级别
+        # build-tools-version: 30.0.3 # 根据项目需要设置Build Tools版本
  
     - name: Grant execute permission for gradlew
       run: chmod +x ./gradlew
