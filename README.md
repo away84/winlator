@@ -8,7 +8,7 @@ Winlator is an Android application that lets you to run Windows (x86_64) applica
 
 # Installation
 
-1. Download and install the APK (Winlator_10.1.apk) from [GitHub Releases](https://github.com/brunodev85/winlator/releases)
+1. Download and install the APK (Winlator_11.1.apk) from [GitHub Releases](https://github.com/brunodev85/winlator/releases)
 2. Launch the app and wait for the installation process to finish
 
 ----
@@ -28,12 +28,10 @@ Winlator is an Android application that lets you to run Windows (x86_64) applica
 - Try running the games using the shortcut on the Winlator home screen, there you can define individual settings for each game.
 - To display low resolution games correctly, try to enabling the `Force Fullscreen` option in the shortcut settings.
 - To improve stability in games that uses Unity Engine, try changing the Box64 preset to `Stability` or in the shortcut settings add the exec argument `-force-gfx-direct`.
-
-# Information
-
-This project has been in constant development since version 1.0, the current app source code is up to version 7.1, I do not update this repository frequently precisely to avoid unofficial releases before the official releases of Winlator.
+- If you are experiencing audio crackling, try increasing the average latency in ALSA/PulseAudio configuration. Old games like Unreal Gold resolve audio issues by increasing this value to 90ms.
 
 # Credits and Third-party apps
+
 - GLIBC Patches by [Termux Pacman](https://github.com/termux-pacman/glibc-packages)
 - Wine ([winehq.org](https://www.winehq.org/))
 - Box86/Box64 by [ptitseb](https://github.com/ptitSeb)
